@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HQ | Barber Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222222;
+        }
+
+           nav {
+    background: #111;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            color: rgb(255, 255, 255);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+    .hero {
+    text-align: center;
+    padding: 140px 20px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("barber.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+        .hero h1 {
+            font-size: 55px;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+       .button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+        .services {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .services h2 {
+            font-size: 35px;
+        }
+
+       .service-box {
+    display: inline-block;
+    width: 220px;
+    padding: 30px 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+.service-box h3 {
+    font-size: 22px;
+}
+
+.service-box strong {
+    display: block;
+    font-size: 20px;
+    margin-top: 15px;
+}
+        
+        .about {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+    background: #111;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .service-box {
+        width: auto;
+        margin: 10px 20px;
+    }
+
+}
+.booking {
+    text-align: center;
+    padding: 70px 20px;
+    background: #f5f5f5;
+}
+
+.booking h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.booking form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input,
+.booking select,
+.booking button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.booking button {
+    background: #111;
+    color: white;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>HQ 💈</h2>
+
+        <div>
+           <a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <h1>Look Sharp. Feel Fresh.</h1>
+
+        <p>
+            Professional haircuts and grooming
+            for men who want to look their best.
+        </p>
+
+        <a href="https://wa.me/233208159367" class="button">
+    Book an Appointment
+</a>
+
+    </section>
+
+   <section class="services" id="services">
+
+   </section>
+
+        <h2>Our Services</h2>
+
+        <div class="service-box">
+            <h3>Haircut</h3>
+            <p>Clean and professional haircut.</p>
+       <strong>GHC50</strong></div>
+
+        <div class="service-box">
+            <h3>Beard Trim</h3>
+            <p>Sharp and clean beard grooming.</p>
+            <strong>GHC30</strong>
+        </div>
+
+        <div class="service-box">
+            <h3>Haircut + Beard</h3>
+            <p>Complete grooming package.</p>
+            <strong>GHC70</strong>
+        </div>
+
+    </section>
+<section class="about">
+
+    <h2>About HQ</h2>
+
+    <p>
+        At HQ BARBERSHOP, we believe every man deserves to look
+        sharp and feel confident. Our experienced barbers
+        provide quality haircuts, beard grooming and
+        professional service in a clean and friendly environment.
+    </p>
+
+</section>
+
+    <section class="contact" id="contact">
+        
+        <h2>Contact Us</h2>
+
+        <p>Ready for fresh cut?
+
+         <a href="https//wa.me/233208159367" class="button"></a>   Phone: +233 208 159 367<br>
+            Email: info@hqbarbershop.com
+        </a>
+        <section class="booking" id="booking">
+
+    <h2>Book Your Appointment</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Choose a Service</option>
+            <option>Haircut</option>
+            <option>Beard Trim</option>
+            <option>Haircut + Beard</option>
+        </select>
+
+        <input type="date" required>
+
+        <input type="time" required>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+
+</section>
+    </section>
+    <script>
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.querySelector('input[placeholder="Your Name"]').value;
+    const phone = document.querySelector('input[placeholder="Phone Number"]').value;
+    const service = document.querySelector("select").value;
+    const date = document.querySelector('input[type="date"]').value;
+    const time = document.querySelector('input[type="time"]').value;
+
+    const message =
+        "Hello HQ!%0A%0A" +
+        "I would like to book an appointment.%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Service: " + service + "%0A" +
+        "Date: " + date + "%0A" +
+        "Time: " + time;
+
+    window.open(
+        "https://wa.me/233208159367?text=" + message,
+        "_blank"
+    );
+
+});
+</script>
+</body>
+</html>
